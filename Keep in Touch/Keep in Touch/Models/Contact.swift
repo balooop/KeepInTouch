@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Contacts
 
 // defines types of friends you can have
 enum ContactBucket: String, CaseIterable {
@@ -18,7 +19,7 @@ enum ContactBucket: String, CaseIterable {
 struct Contact: Identifiable {
     let id: String
     let name: String
-    let phoneNumber: String
+    let phoneNumber: CNPhoneNumber
     var bucket: ContactBucket       // which type of contact this is
     var lastContactedDate: Date?
 }

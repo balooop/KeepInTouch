@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D5BF4DB2C7BFC5B00E2E8EC /* ContactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5BF4DA2C7BFC5B00E2E8EC /* ContactTests.swift */; };
+		2D996D302C7D6AC7007D80E7 /* ContactManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D996D2F2C7D6AC7007D80E7 /* ContactManager.swift */; };
 		2DFE38402C7BF3E0009A5E46 /* Keep_in_TouchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE383F2C7BF3E0009A5E46 /* Keep_in_TouchApp.swift */; };
 		2DFE38442C7BF3E1009A5E46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DFE38432C7BF3E1009A5E46 /* Assets.xcassets */; };
 		2DFE38482C7BF3E1009A5E46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DFE38472C7BF3E1009A5E46 /* Preview Assets.xcassets */; };
@@ -37,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		2D5BF4DA2C7BFC5B00E2E8EC /* ContactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTests.swift; sourceTree = "<group>"; };
+		2D996D2F2C7D6AC7007D80E7 /* ContactManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactManager.swift; sourceTree = "<group>"; };
+		2DE11E3E2C8E562C00E6D6C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DFE383C2C7BF3E0009A5E46 /* Keep in Touch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Keep in Touch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DFE383F2C7BF3E0009A5E46 /* Keep_in_TouchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keep_in_TouchApp.swift; sourceTree = "<group>"; };
 		2DFE38432C7BF3E1009A5E46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,6 +102,7 @@
 		2DFE383E2C7BF3E0009A5E46 /* Keep in Touch */ = {
 			isa = PBXGroup;
 			children = (
+				2DE11E3E2C8E562C00E6D6C2 /* Info.plist */,
 				2DFE386E2C7BF63F009A5E46 /* Services */,
 				2DFE386D2C7BF637009A5E46 /* ViewModels */,
 				2DFE386C2C7BF630009A5E46 /* Views */,
@@ -163,6 +167,7 @@
 		2DFE386E2C7BF63F009A5E46 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				2D996D2F2C7D6AC7007D80E7 /* ContactManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 			files = (
 				2DFE38722C7BF750009A5E46 /* Contact.swift in Sources */,
 				2DFE38402C7BF3E0009A5E46 /* Keep_in_TouchApp.swift in Sources */,
+				2D996D302C7D6AC7007D80E7 /* ContactManager.swift in Sources */,
 				2DFE38702C7BF681009A5E46 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,7 +467,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Keep in Touch/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Keep in Touch/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -498,7 +505,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Keep in Touch/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Keep in Touch/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;

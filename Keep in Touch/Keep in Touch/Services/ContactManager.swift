@@ -24,7 +24,7 @@ final class ContactManager{
     private let contactKeys =  [CNContactGivenNameKey, CNContactFamilyNameKey, CNContactPhoneNumbersKey]
     
     
-    // function to fetch contacts. runs asynchronously
+    // function to fetch contacts. runs asynchronously 
     func fetchContacts() async throws -> [Contact]{
         let contactStore = CNContactStore();                // initialize a contact store to access contacts on device
         var contacts : [Contact] = []                       // initialize an array to store contacts for the app
@@ -60,7 +60,7 @@ final class ContactManager{
                                         id: UUID().uuidString,
                                         name: name,
                                         phoneNumber: phoneNumber,
-                                        bucket: ContactBucket.regularReminders
+                                        bucket: ContactBucket.noReminders
                                     ))
                 }
             }
